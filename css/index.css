@@ -1,0 +1,312 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은고딕";
+    color: #222328;
+}
+body{
+    width: 1000px;
+    background-color: white;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+/* //////////////////////////////////////해더///////////////////////////////////////////////// */
+header{
+    float: left;
+}
+.top{
+    float: left;
+    width: 200px;
+    height: 650px;
+}
+.logo{
+    float: left;
+    height: 40px;
+    width: 200px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.menu{
+  text-align: center;
+  width: 180px;
+  top: 100px;
+}
+.navi>li{
+    float: left;
+    width: 180px;
+}
+.navi>li>a{
+    height: 40px;
+    width: 180px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #222328;
+    color: white;
+}
+.navi>li>a:hover{
+    background-color: #930930;
+    color: #ffff00;
+}
+.submenu{
+    display: none;
+    width: 100%;
+    float: left;
+}
+.submenu>li>a{
+    height: 40px;
+    width: 180px;
+    line-height: 40px;
+    font-size:14px ;
+    font-weight: bold;
+    background-color: #cccccc;
+    color: white;
+}
+.submenu>li>a:hover{
+    background-color: #999999;
+    color: #ffff00;
+}
+/* //////////////////////////////////////////////이미지슬라이드자리////////////////////////////////////////////////// */
+.imgslide{
+    float: right;
+    width: 800px;
+    height: 350px;
+    position: relative;
+}
+.imgslide>a{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.imgtext{
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 50px;
+    background-color: rgba(40 40 40 0.3);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* /////////////////////////////////////////콘텐츠자리///////////////////////////////////////////////// */
+.contents{
+    float: right;
+    width: 800px;
+    height: 200px;
+}
+.tab{
+    float: left;
+    width: 100px;
+}
+.tab h4{
+    float: left;
+    height: 30px;
+    width: 80px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #222328;
+}
+/* /////////////////////////////////////////////공지사항//////////////////////////////////////////////////// */
+.notice{
+    float: left;
+    height: 190px;
+    width: 280px;
+    margin-top: 10px;
+}
+.notice>div{
+    width: 280px;
+    border-bottom: 1px solid #cccccc;
+}
+.notice ul{
+    float: left;
+    height: 30px;
+    width: 280px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.notice li span{
+    float: right;
+}
+.notice li:nth-child(2n){
+    background-color: #cccccc;
+}
+.notice li:hover{
+    font-weight: bold;
+}
+/* ////////////////////////////////// 갤러리///////////////////////////////////////////////////////// */
+.gallery{
+    float: left;
+    height: 180px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.gallery>div{
+    width: 280px;
+    border-bottom: 1px solid #cccccc;
+}
+.gallery ul li{
+    float: left;
+    padding: 10px;
+    margin-top: 10px;
+}
+.gallery img{
+    height: 90px;
+    width: 75px;
+}
+.gallery li:hover{
+    opacity: 0.5;
+}
+/* ///////////////////////////////////바로가기자리///////////////////////////////////////////////////////// */
+.shortcut{
+    float: left;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    text-align: center;
+}
+.shortcut img{
+    float: right;
+    margin-top: 10px;
+    height: 180px;
+    width: 200px;
+}
+.sctext{
+    /* float: left; */
+    height: 30px;
+    width: 100px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 30px;
+    background-color: rgba(40 40 40 0.3);
+    /* margin-top: 80px;
+    margin-left: 60px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sctext:hover{
+    opacity: 0.5;
+}
+/* ////////////////////////////////////////////모달팝업창/////////////////////////////////////////////////// */
+#modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    display: none;
+}
+#modal.active{
+    display: block;
+}
+.modal_up{
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    top:50% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+.uptitle{
+    margin-top: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.upbody{
+    padding: 30px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+}
+.btn{
+    height: 20px;
+    width: 80px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    background: #cccccc;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+/* //////////////////////////////////////////footer자리////////////////////////////////////////////////// */
+footer{
+    float: right;
+}
+.bottom{
+    float: left;
+    width: 800px;
+    height: 100px;
+    background-color: #ababab;
+}
+/* ////////////////////////////////////카피라이트자리//////////////////////////////////////////////// */
+.copy{
+    float: left;
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 100px;
+}
+/* //////////////////////////////////////////////////sns자리///////////////////////////////////////////////////////// */
+.site{
+    float: right;
+    width: 200px;
+    height: 100px;
+}
+.sns{
+    float: right;
+    width: 200px;
+    height: 50px;
+}
+.sns ul{
+    text-align: center;
+}
+.sns ul li{
+    display: inline-block;
+}
+.sns img{
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+}
+.sns img:hover{
+    opacity: 0.5;
+}
+/* /////////////////////////////////////////////////패밀리사이트자리/////////////////////////////////////////////////////// */
+.familysite{
+    float: right;
+    width: 200px;
+    height: 50px;
+}
+.familysite select{
+    float: right;
+    height: 30px;
+    width: 180px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}
